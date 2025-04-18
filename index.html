@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta keywords="HTML, CSS" />
-    <meta description="FitMaker - Transform Your Body" />
+    <meta
+      name="description"
+      content="FitMaker - Transform Your Body with expert coaching and personalized fitness programs."
+    />
+
     <meta author="Bahar Alekberova" />
     <link rel="stylesheet" href="./css/style.css" />
     <!-- <base href="springGYM.com" /> -->
@@ -33,11 +37,19 @@
 
       <nav>
         <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Programs</a></li>
-          <li><a href="#">Coaching</a></li>
-          <li><a href="#">Memberhip</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="#home">Home</a></li>
+          <li>
+            <a href="#programs"
+              >Programs <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#coaching"
+              >Coaching <i class="fa-solid fa-chevron-down"></i
+            ></a>
+          </li>
+          <li><a href="#membership">Memberhip</a></li>
+          <li><a href="#about">About Us</a></li>
         </ul>
       </nav>
 
@@ -49,8 +61,31 @@
 
     <main>
       <div class="hero">
-        <div class="left-hero">left</div>
-        <div class="right-hero">right</div>
+        <div class="left-hero">
+          <p class="slogan">
+            Achive Your <br />
+            <span>Fitness Goals</span> <br />
+            With FitMaker
+          </p>
+
+          <p class="desc">
+            "Join the Fitmaker community and transform your fitness journey. Our
+            expert coaches and personalized programs are designed to help you
+            achieve your goals and exceed your expectations. Ready to make a
+            change?"
+          </p>
+
+          <div class="hero-btns">
+            <button class="start-btn">Start Your Journey</button>
+            <button class="explore-btn">Explore Programs</button>
+          </div>
+        </div>
+
+        <div class="right-hero">
+          <div class="linear-bg">
+            <img src="./img/hero-img.png" alt="Hero Image" />
+          </div>
+        </div>
       </div>
     </main>
   </body>
