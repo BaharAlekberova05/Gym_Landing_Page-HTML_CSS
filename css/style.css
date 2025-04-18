@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap");
+@import "./reset.css";
+@import "./navbar.css";
+
+body {
+  font-family: "Vazirmatn", sans-serif;
+  background: linear-gradient(
+    135deg,
+    #3a0f0f 0%,
+    #230404 40%,
+    #330000 70%,
+    #5e1e00 100%
+  );
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
