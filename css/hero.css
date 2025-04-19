@@ -1,0 +1,184 @@
+main {
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left-hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      padding: 40px 0;
+
+      .slogan {
+        color: white;
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        line-height: 50px;
+        text-align: center;
+
+        & span {
+          font-size: 60px;
+          color: #d20c13;
+        }
+      }
+
+      .desc {
+        color: white;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 20px;
+      }
+
+      .hero-btns {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .start-btn,
+        .explore-btn {
+          background-color: #d90a14;
+          padding: 8px 0;
+          width: 290px;
+          border-radius: 20px;
+          border: 1px solid #d90a14;
+          color: white;
+          font-size: 16px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+
+        .explore-btn {
+          color: #cd4e17;
+          background: transparent;
+        }
+      }
+    }
+
+    .right-hero {
+      width: 50%;
+      padding: 40px;
+      margin-left: 80px;
+
+      .linear-bg {
+        width: 100%;
+        height: 560px;
+        position: relative;
+        overflow: hidden;
+        background-image: url(../img/blur_eliipse.svg);
+        z-index: 0;
+
+        & img {
+          position: absolute;
+          top: 0px;
+          left: 30px;
+          width: 560px;
+          height: 500px;
+          object-fit: contain;
+          z-index: 1;
+        }
+
+        .positive,
+        .coaches,
+        .workout,
+        .trainers {
+          width: 150px;
+          height: 60px;
+          border: 1px solid #d90a14;
+          border-radius: 20px;
+          background: #1d1d1d;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 20px;
+          right: 50px;
+        }
+
+        .coaches {
+          width: 120px;
+          top: 120px;
+          left: 0;
+        }
+
+        .workout {
+          top: 400px;
+          left: 0;
+          z-index: 2;
+        }
+
+        .trainers {
+          width: 130px;
+          top: 400px;
+          right: 30px;
+          z-index: 2;
+        }
+
+        .p1 {
+          color: white;
+          margin-bottom: 12px;
+          font-weight: 600;
+          font-size: 20px;
+        }
+
+        .p2 {
+          color: white;
+          font-weight: 400;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 80px;
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      position: relative;
+
+      .stat-per {
+        font-weight: 500;
+        font-size: 16px;
+        color: white;
+
+        & span {
+          color: #d70b15;
+          font-size: 36px;
+          font-weight: 700;
+          margin-right: 8px;
+        }
+      }
+
+      .stat-desc {
+        font-size: 12px;
+        font-weight: 400;
+        color: #888888;
+      }
+    }
+
+    .stat-item:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 3px;
+      height: 100%;
+      border-radius: 3px;
+      background: #c93616;
+      transform: translateX(10px);
+    }
+  }
+}
