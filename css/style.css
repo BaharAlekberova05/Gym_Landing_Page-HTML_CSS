@@ -13,8 +13,8 @@ body {
     #330000 70%,
     #5e1e00 100%
   );
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
 }
 
 .container {
