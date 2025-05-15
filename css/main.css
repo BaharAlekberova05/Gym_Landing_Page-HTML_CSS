@@ -10,10 +10,26 @@
   }
 }
 
+.services-h-com {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 16px;
+
+  & span {
+    color: #c60912;
+  }
+}
+
 .services-p {
   color: white;
   text-align: center;
   margin-bottom: 24px;
+}
+
+.services-p-com {
+  color: white;
+  margin-bottom: 16px;
 }
 
 .services-grid {
@@ -256,6 +272,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   margin-top: 24px;
+  margin-bottom: 80px;
 
   .trainers-item {
     border-radius: 8px;
@@ -350,4 +367,181 @@
       font-size: 20px;
     }
   }
+}
+
+.community {
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+  margin: 80px 0;
+
+  .left-com {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 16px;
+    width: 50%;
+
+    .left-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+
+      .left-grid-item {
+        padding: 12px;
+        border-radius: 12px;
+        background: #464141;
+
+        & p:first-of-type {
+          color: white;
+          margin-bottom: 8px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 29px;
+
+          & span {
+            color: #d90a14;
+          }
+        }
+
+        & p:last-of-type {
+          font-size: 12px;
+          font-weight: 400;
+          color: white;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  .right-com {
+    width: 50%;
+    height: 100%;
+    background: #5b0408;
+    border-radius: 12px;
+    padding: 16px 24px;
+    display: flex;
+    /* flex: 1; */
+    flex-direction: column;
+    gap: 12px;
+
+    .login-register {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & span:first-of-type {
+        font-size: 24px;
+        font-weight: 700;
+        color: #d90a14;
+        margin-right: 16px;
+      }
+
+      & span:last-of-type {
+        color: #ee8e93;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+
+    & form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      .name-form,
+      .email-form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        & label {
+          font-weight: 500;
+          color: white;
+        }
+
+        & input {
+          border-radius: 4px;
+          border: 2px solid #d9d9d9;
+          padding: 8px 4px;
+          background: transparent;
+          color: white;
+          outline: none;
+
+          &::placeholder {
+            font-size: 10px;
+            color: white;
+          }
+        }
+      }
+
+      .btn-signup {
+        background: #d90a14;
+        border: none;
+        border-radius: 4px;
+        padding: 8px 0;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .btn-signup-google {
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 4px;
+        padding: 7px 0;
+        font-weight: 500;
+        color: white;
+      }
+    }
+  }
+}
+
+.faq {
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  border: 1px solid #d90a14;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #ee8e93;
+}
+
+.faq-answer {
+  display: none;
+  background-color: #464141;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-question {
+  background-color: #ee8e93;
 }
